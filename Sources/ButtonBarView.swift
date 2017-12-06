@@ -58,7 +58,7 @@ open class ButtonBarView: UICollectionView {
     }
     internal var selectedBarInsets: CGFloat = 0 {
         didSet {
-            updateSlectedBarYPosition()
+            updateSelectedBarYPosition()
         }
     }
     var selectedBarVerticalAlignment: SelectedBarVerticalAlignment = .bottom
