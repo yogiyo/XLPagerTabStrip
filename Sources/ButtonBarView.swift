@@ -51,18 +51,18 @@ open class ButtonBarView: UICollectionView {
         return bar
     }()
 
-    internal var selectedBarHeight: CGFloat = 4 {
+    open var selectedBarHeight: CGFloat = 4 {
         didSet {
             updateSelectedBarYPosition()
         }
     }
-    internal var selectedBarInsets: CGFloat = 0 {
+    open var selectedBarInsets: CGFloat = 0 {
         didSet {
             updateSelectedBarYPosition()
         }
     }
-    var selectedBarVerticalAlignment: SelectedBarVerticalAlignment = .bottom
-    var selectedBarAlignment: SelectedBarAlignment = .center
+    open var selectedBarVerticalAlignment: SelectedBarVerticalAlignment = .bottom
+    open var selectedBarAlignment: SelectedBarAlignment = .center
     var selectedIndex = 0
 
     required public init?(coder aDecoder: NSCoder) {
